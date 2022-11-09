@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+
+<body>
+    <a-scene>
+
+        <a-sky src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/sky.jpg"></a-sky>
+        <!-- Ground -->
+        <a-plane position="0 0 0" rotation="-90 0 0" width="20" height="10"
+            src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/ground.webp"></a-plane>
+        <!-- Carpet -->
+        <a-plane position="0 0.1 0" rotation="-90 0 0" width="8" height="5"
+            src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/carpet.jpg"></a-plane>
+        <!-- Wall -->
+        <a-plane position="0 6.5 -4.5" width="20" height="13"
+            src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/wall.jpeg"></a-plane>
+        <!-- Left Poster -->
+        <a-plane position="-5 6 -3.3" rotation="0 0 0" width="4" height="6"
+            src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/left-poster.png"></a-plane>
+        <!-- Right Poster -->
+        <a-plane position="5 6 -3.3" rotation="0 0 0" width="4" height="6"
+            src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/left-poster.png"></a-plane>
+        <!-- Middle Poster -->
+        <a-plane position="0 6 -3.3" rotation="0 0 0" width="4" height="6"
+            src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/middle-poster.png"></a-plane>
+        <!-- Table -->
+        <a-cylinder height="2" radius="0.8" rotation="180 0 0" position="0 0 1"
+            src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/dining-table.jpeg"></a-cylinder>
+        <a-box height="3.5" width="9" depth="0.2" position="0 1 0" rotation="90 0 0"
+            src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/dining-table.jpeg"></a-box>
+        <!-- Lamp -->
+        <a-cone color="#42bff5" position="0 7.5 0" radius-top="0.5" radius-bottom="2">
+            <a-sphere color="#FFF176" position="0 -0.5 0"></a-sphere>
+            <a-cylinder color="#42bff5" height="4" radius="0.15" position="0 2 0"></a-cylinder>
+        </a-cone>
+        <!-- Chair Right -->
+        <a-cylinder src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/chair.jpeg" radius="1.2"
+            position="6.5 -0.4 0">
+            <a-cylinder src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/chair.jpeg"
+                radius="0.2" height="1.2" position="0 1 0"></a-cylinder>
+            <a-cylinder src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/chair.jpeg"
+                radius="1.3" height="0.2" position="0 1.9 0"></a-cylinder>
+            <a-cylinder src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/chair.jpeg"
+                radius="1.3" height="0.2" position="0.85 3 0" rotation="90 -90 0"></a-cylinder>
+        </a-cylinder>
+         <!-- Chair Left -->
+         <a-cylinder src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/chair.jpeg" radius="1.2"
+         position="-6.5 -0.4 0">
+         <a-cylinder src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/chair.jpeg"
+             radius="0.2" height="1.2" position="0 1 0"></a-cylinder>
+         <a-cylinder src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/chair.jpeg"
+             radius="1.3" height="0.2" position="0 1.9 0"></a-cylinder>
+         <a-cylinder src="https://raw.githubusercontent.com/whitehatjr/VR-PRO-C147/main/assets/chair.jpeg"
+             radius="1.3" height="0.2" position="-0.85 3 0" rotation="90 -90 0"></a-cylinder>
+         </a-cylinder>
+        <!-- Camera -->
+        <a-camera look-controls-enabled wasd-controls-enabled position="0 5 15"></a-camera>
+    </a-scene>
+</body>
+
+</html>
